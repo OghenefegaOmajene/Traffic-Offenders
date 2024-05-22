@@ -1,0 +1,473 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  height: 250vh;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.navbar{
+  box-shadow: 0px 3px 50px indianred;
+  background-color: rgba(0, 0, 0, 0.879);
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.hero-section{
+  display: flex;
+  gap: 5%;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.logo{
+  /* border: 1px solid red; */
+  width: 30%;
+  height: 100%;
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+  gap: 2%;
+  font-size: 25px;
+  /* margin-left: 60px; */
+}
+.logo > i{
+  color: aqua;
+}
+.logo > p{
+  font-family: 'Protest Revolution', sans-serif;
+  color: rgb(220, 25, 80);
+}
+.nav-opt{
+  border: 1px solid white;
+  display: flex;
+  gap: 7%;
+  width: 30%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 160px; */
+}
+.nav-opt > a{
+  font-family: 'Protest Revolution', sans-serif;
+  /* font-family: 'Pacifico', cursive; */
+  display: flex;
+  gap: 10px;
+  text-decoration: none;
+  color: coral;
+}
+
+/* https://t4.ftcdn.net/jpg/01/83/39/83/360_F_183398345_cBoQZzIS4PXiyFd0gw5FbOs3HYxbG8Yj.jpg */
+
+
+.first{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+  height: 560px;
+  width: 70%;
+  /* margin-left: 150px; */
+}
+.first > h1{
+  font-family: 'Protest Revolution', sans-serif;
+  font-size: 60px;
+  margin-bottom: 20px;
+  background-image: linear-gradient(45deg, crimson, coral, goldenrod, palevioletred, firebrick, saddlebrown);
+  background-clip: text;
+  background-size: 300% 100%;
+  color: transparent;
+  animation-name: gradientAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes gradientAnimation{
+  0%{
+      background-position: 0
+  }
+  25%{
+      background-position: 25%
+  }
+  50%{
+      background-position: 50%
+  }
+  75%{
+      background-position: 75%
+  }
+  100%{
+      background-position: 100%
+  }
+}
+.first > h1, p{
+  margin-bottom: 30px;
+}
+
+.second{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 6%;
+  text-align: center;
+  height: 60%;
+  width: 70%;
+  margin-bottom: 50px;
+}
+.second > div{
+  height: 50%;
+}
+.analytics{
+  padding-left: 30px;
+}
+.analytics-txt > h2, .cookie-txt > h2{
+  margin-bottom: 10px;
+}
+.analytics-txt > p, .cookie-txt > p{
+  margin-bottom: 20px;
+}
+.analytics, .cookies{
+  display: flex;
+  gap: 5%;
+  width: 100%;
+  height: 20%;
+}
+.analytics-img, .cookie-img{
+  width: 40%;
+  height: 100%;
+}
+.analytics-img > img, .cookie-img > img{
+  width: 100%;
+  height: 100%;
+}
+.analytics-txt, .cookie-txt{
+  text-align: start;
+  width: 60%;
+  height: 100%;
+}
+#learn > a{
+  text-decoration: none;
+  color: white;
+}
+#learn > a:hover{
+  color: #FF5F6D;
+}
+#learn{
+  cursor: pointer;
+  border-radius: 30px;
+  border: 0;
+  padding: 10px 20px;
+  background-color: #FF5F6D;
+  color: white;
+}
+#learn:hover{
+  transition: 1s;
+  padding: 10px 20px;
+  border: 1px solid #FF5F6D;
+  background-color: transparent;
+  color: #FF5F6D;
+}
+
+
+
+.footer{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  width: 100%;
+  /* padding-top: 60px; */
+  /* padding-left: 80px;
+  padding-right: 80px; */
+}
+.footer-section{
+  background-color: rgb(44, 44, 44);
+  color: white;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  /* gap: 2%; */
+  /* border: 1px solid rgb(205, 90, 8); */
+  /* background-color: white; */
+  height: 350px;
+}
+.img-block-2{
+  padding-top: 30px;
+  padding-left: 60px;
+  width: 50%;
+  height: 100%;
+  background-image: url('https://www.the-sun.com/wp-content/uploads/sites/6/2023/06/newspress-collage-8292657-1686041333604.jpg?1686027006&strip=all&quality=100&w=1920&h=1333&crop=1');
+  background-size: cover;
+}
+.txt-block{
+  text-align: start;
+  width: 70%;
+}
+#ic{
+  margin-right: 20px;
+}
+.icon-block{
+  border-right: 1px solid white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 11%;
+  padding-left: 30px;
+  /* padding-top: 40px; */
+  text-align: start;
+  width: 17.5%;
+  height: 100%;
+}
+.icon-block > h3{
+  font-family: 'Protest Revolution', sans-serif;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+#name{
+  padding-right: 230px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: 0;
+  background-color: rgb(210, 230, 228);
+}
+#email{
+  padding-right: 30px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border: 0;
+  background-color: rgb(210, 230, 228);
+}
+.txt-block > i{
+  margin-right: 20px;
+  color: black;
+  font-size: 30px;
+}
+.txt-block > p{
+  text-align: start;
+}
+.logo-2{
+  color: white;
+  background-color: rgb(86, 85, 85);
+  padding-left: 30px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  gap: 60%;
+  align-items: center;
+  justify-content: start;
+}
+.logo-txt > i{
+  font-size: 30px;
+}
+#elit{
+  font-size: 25px;
+}
+.logo-txt{
+  font-family: 'Protest Revolution', sans-serif;
+  align-items: center;
+  display: flex;
+  gap: 10%;
+  height: 100%;
+  width: 40%;
+}
+.logo-txt > p{
+  margin-bottom: 0;
+  text-align: center;
+}
+.bi-facebook{
+  color: rgb(0, 225, 255);
+}
+.info{
+  height: 30%;
+  display: flex;
+  gap: 10%;
+}
+.footer-section-two{
+  /* padding-right: 60px; */
+  /* padding-top: 40px; */
+  /* padding-bottom: 40px; */
+  padding-left: 30px;
+  height: 60px;
+  display: flex;
+  /* gap: 30%; */
+  width: 100%;
+  color: white;
+  background-color: rgb(86, 85, 85);
+}
+.ft-one{
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  display: flex;
+  gap: 10%;
+  padding-top: 20px;
+}
+.ft-one > div{
+  width: 100%;
+  height: 100%;
+}
+.ft-two{
+  /* padding: 60px; */
+  height: 100%;
+  background-color: rgb(44, 44, 44);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  /* gap: 25%; */
+  width: 20%;
+}
+.ft-two > i{
+  font-size: 30px;
+}
+.inp-btn{
+  width: 77%;
+  border-radius: 30px;
+}
+.inp-btn-3{
+  /* width: 50%; */
+  border-radius: 30px;
+}
+.inp-btn-2{
+  border-radius: 30px;
+  background-color: white;
+}
+
+@media screen and (max-width: 1200px){
+  .container{
+      height: 500vh;
+  }
+  .analytics-img > img, .cookie-img > img{
+      height: 300px;
+  }
+}
+@media screen and (max-width: 1198px){
+  .container{
+      height: 475vh;
+  }
+}
+@media screen and (max-width: 1195px){
+  .container{
+      height: 450vh;
+  }
+  .nav-opt > a{
+      font-size: 15px;
+  }
+}
+@media screen and (max-width: 1127px){
+  .logo > p{
+      font-size: 20px;
+  }
+}
+@media screen and (max-width: 1127px){
+  .nav-opt > a{
+      font-size: 14px;
+  }
+}
+@media screen and (max-width: 1059px){
+  .logo > p{
+      font-size: 18px;
+  }
+  .nav-opt > a{
+      font-size: 13px;
+  }
+}
+@media screen and (max-width: 991px){
+  .logo > p{
+      font-size: 17px;
+  }
+  .nav-opt > a{
+      font-size: 12.5px;
+  }
+}
+@media screen and (max-width: 957px){
+  .logo > p{
+      font-size: 17px;
+  }
+  .nav-opt > a{
+      font-size: 12px;
+  }
+}
+@media screen and (max-width: 953px){
+  .container{
+      width: 101%;
+  }
+}   
+@media screen and (max-width: 940px){
+  .container{
+      width: 102.3%;
+  }
+}   
+@media screen and (max-width: 933px){
+  .container{
+      width: 100%;
+      overflow-x: hidden;
+  }
+}   
+@media screen and (max-width: 923px){
+  .nav-opt > a{
+      font-size: 11px;
+  }
+}
+@media screen and (max-width: 905px){
+  .logo > p{
+      font-size: 16px;
+  }
+  .nav-opt > a{
+      font-size: 11.5px;
+  }
+}
+@media screen and (max-width: 889px){
+  .logo > p{
+      font-size: 15px;
+  }
+  .nav-opt > a{
+      font-size: 10px;
+  }
+}
+@media screen and (max-width: 881px){
+  .first{
+      margin-bottom: 80px;
+  }
+}
+@media screen and (max-width: 819px){
+  .first{
+      margin-bottom: 140px;
+  }
+}
+@media screen and (max-width: 788px){
+  .logo > p{
+      font-size: 13px;
+  }
+  .nav-opt > a{
+      font-size: 8px;
+  }
+}
+@media screen and (max-width: 652px){
+  /* Introduce new navbar function; */
+}
+@media screen and (max-width: 376px){
+  .container{
+      width: 100%;
+      overflow-x: hidden;
+  }
+}

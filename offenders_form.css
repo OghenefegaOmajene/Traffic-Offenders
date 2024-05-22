@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#updatebtn{
+    background-color: #009879;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    box-shadow: 1px 1px 1px black;
+    /* display: flex;
+    gap: 6px; */
+    text-align: center;
+}
+#updatebtn:hover{
+    background-color: white;
+    color: #009879;
+    transition: 2s;
+}
+#deletebtn{
+    box-shadow: 1px 1px 1px black;
+    background-color: crimson;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    /* display: flex;
+    gap: 6px; */
+    text-align: center;
+}
+#deletebtn:hover{
+    background-color: white;
+    color: crimson;
+    transition: 2s;
+}
+body{
+    height: 200vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-top: 30px;
+    gap: 2%;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: #ffc47167;
+}
+
+#telephone{
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    margin-right: 900px;
+    right: 0px;
+}
+#twirl{
+    width: 200px;
+    position: relative;
+    z-index: 1;
+    margin-left: 900px;
+    margin-top: 200px;
+    right: 0px;
+}
+.container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* gap: 10px; */
+    background-color: white;
+    /* background-image: linear-gradient(to right, #ff5f6c68, #ffc4716c); */
+    width: 900px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px rgb(47, 47, 47);
+    z-index: 1000;
+}
+.container > h2{
+    color: rgb(255, 150, 171);
+    text-align: center;
+}
+.container1{
+    width: 50%;
+    height: 100%;
+}
+.container1 > img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.container2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    padding-left: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+
+
+
+
+
+
+
+
+
+#saveButton{
+    background-image: linear-gradient(to right, #FF5F6D, #FFC371);
+    /* background-color: palevioletred; */
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 3px 2px 5px gray;
+    color: white;
+    width: 150px;
+    animation-name: pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.361);
+    height: 50px;
+}
+#saveButton:hover{
+    background-color: rgb(161, 44, 83);
+    transition: 2s;
+}
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+select,input{
+    width: 180px;
+}
+input, select{
+    width: 300px;
+    border-radius: 10px;
+    background-color: #7d7d7d23;
+    color: black;
+    height: 40px;
+    border: 0;
+    padding-left: 30px;
+}
+label{
+    color: black;
+}
+input::placeholder{
+    color: black;
+}
+
+
+
+
+.styled-table {
+    /* margin-top: 30000px; */
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    /* background-color: #009879; */
+    background-image: linear-gradient(to right, #FF5F6D, #FFC371);
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:nth-of-type(odd) {
+    background-color: #b9b9b981;
+}
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #FF5F6D;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+
+@media screen and(max-width: 1200px) {
+    body{
+        height: 10vh;
+    }
+    .container1 > img{
+        visibility: hidden;
+    }
+}
+@media screen and(max-width: 1160px) {
+    body{
+        padding: 200px;
+    }
+}
+@media screen and(max-width: 1000px) {
+    body{
+        padding: 200px;
+    }
+    .container1 > img{
+        visibility: hidden;
+    }
+}

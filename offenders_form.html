@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="offenders_form.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <img src="img/telephone.webp" alt="" id="telephone">
+    <img src="img/twirl2.webp" alt="" id="twirl">
+    <div class="container">
+        <div class="container1">
+            <img src="img/trafficwarden_1022415157_1000.jpg" alt="">
+        </div>
+      
+        
+        <div class="container2">
+            <h2>OFFENDERS REGISTRATION</h2>
+            <div>
+                <label for="">Firstname:</label>
+                <input type="text" id="firstname" />
+            </div>
+
+            <div>
+                <label for="">Lastname:</label>
+                <input type="text" id="lastname" />
+            </div>
+
+            <div>
+                <label for="">Gender:</label>
+                <select name="" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                </select>
+            </div>
+            
+            <div>
+                <label for="">Age:</label>
+                <input type="number" id="age" />
+            </div>
+
+            <div>
+                <label for="">Offence:</label>
+                <input type="text" id="offence" />
+            </div>
+
+            <div>
+                <label for="">Plate Number:</label>
+                <input type="text" id="platenum" />
+            </div>
+
+            <div>
+                <label for="">Date:</label>
+                <input type="date" id="date" />
+            </div>
+
+            <div>
+                <button type="submit" id="saveButton">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Gender</th>
+                <th>Age</th>
+                <th>Offence</th>
+                <th>Plate Number</th>
+                <th>Date</th>
+                <th>Action</th>
+              </tr>
+        </thead>
+        
+       <tbody id="users_list">
+
+       </tbody>
+    </table>
+
+    <script src="offender.js"></script>
+  </body>
+</html>
