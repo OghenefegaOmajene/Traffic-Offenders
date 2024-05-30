@@ -62,10 +62,13 @@ function saveUser(firstName, lastName, gender, aged, offence, plateNum, date) {
 }
 
 
-
-function deleteUser() {
-  
-}
+// function accepted(){
+//   if(displayUser.indexOf(users) !== -1){
+//     alert("created")
+//   }else{
+//     alert("Failed")
+//   }
+// }
 
 
 function displayUser() {
@@ -91,9 +94,14 @@ function displayUser() {
   });
 
 
-  const deletemybutton = document.querySelectorAll(".delete");
-  deletemybutton.forEach((button)=>{
+  const deletebutton = document.querySelectorAll(".delete");
+  deletebutton.forEach((button)=>{
     button.addEventListener("click", deleteUser);
+  })
+
+  const updatebtn = document.querySelectorAll(".update");
+  updatebtn.forEach((button)=>{
+    button.addEventListener("click", updateUser);
   })
   
 }
@@ -104,8 +112,15 @@ function deleteUser(action) {
   displayUser();
 }
 
-// function updateUser(user){
+function updateUser(user){
+  // const index = action.target.getAttribute("data-index");
+  // users.splice(index, 1);
+  // displayUser();
 
-// }
+  if (lopi) {
+    
+  }
+}
+// accepted();
 displayUser();
 

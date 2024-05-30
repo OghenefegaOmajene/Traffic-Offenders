@@ -203,24 +203,139 @@ input::placeholder{
     color: #009879;
 }
 
-@media screen and(max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     body{
-        height: 10vh;
-    }
-    .container1 > img{
-        visibility: hidden;
+        height: 100vh;
+        padding-top: 100px;
     }
 }
-@media screen and(max-width: 1160px) {
+@media screen and (max-width: 1160px) {
     body{
         padding: 200px;
     }
 }
-@media screen and(max-width: 1000px) {
-    body{
-        padding: 200px;
+@media screen and (max-width: 1100px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 700px;
+        height: 700px;
+    }
+    .container1{
+        /* border: 2px solid fuchsia; */
+        display: none;
+    }
+    .container2{
+        /* border: 3px solid firebrick; */
+        width: 100%;
+        /* justify-content: center; */
+        align-items: center;
+    }
+    .container2 > div{
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 2%;
     }
     .container1 > img{
         visibility: hidden;
+        display: none;
+    }
+    #telephone{
+        margin-left: 200px;
+    }
+    #twirl{
+        margin-right: 140px;
+        margin-top: 400px;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    body{
+        padding-left: 200px;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+    /* body{
+        padding: 200px;
+    } */
+    .container{
+        width: 600px;
+    }
+    #telephone{
+        margin-left: 300px;
+    }
+    #twirl{
+        margin-right: 250px;
+        margin-top: 400px;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    .container{
+        width: 500px;
+    }
+    #telephone{
+        margin-left: 400px;
+    }
+    #twirl{
+        margin-right: 400px;
+        margin-top: 400px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        padding: 200px;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        padding: 200px;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    body{
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+    .styled-table{
+        width: 200px;
+    }
+    .container{
+        width: 450px;
+    }
+    #telephone{
+        margin-left: 450px;
+    }
+    #twirl{
+        margin-right: 450px;
+        margin-top: 400px;
+    }
+}
+
+/* @media screen and (max-width: 696px) {
+    body{
+        padding-left: 400px;
+        padding-right: 400px;
+    }
+
+} */
