@@ -78,7 +78,7 @@
   text-decoration: none;
   color: white;
 }
-.nav-opt > icon{
+.icon{
   display: none;
 }
 
@@ -264,13 +264,14 @@
 .logo-2{
   color: white;
   background-color: rgb(86, 85, 85);
-  padding-left: 30px;
+  padding-left: 60px;
   width: 100%;
   height: 100px;
   display: flex;
-  gap: 30%;
+  gap: 20%;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
+  border: 3px solid black;
 }
 .logo-txt > i{
   font-size: 30px;
@@ -279,11 +280,11 @@
   font-size: 25px;
 }
 .logo_name{
-  width: 50%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   /* border: 3px solid crimson; */
 }
 .logo-txt{
@@ -292,8 +293,9 @@
   display: flex;
   gap: 10%;
   height: 100%;
-  width: 40%;
+  width: 60%;
   /* border: 3px solid saddlebrown; */
+  justify-content: center;
 }
 .logo-txt > a{
   margin-bottom: 0;
@@ -389,9 +391,28 @@
   }
 }
 
+
+@media screen and (max-width: 1000px) {
+  .logo-2{
+    padding-right: 100px;
+  }
+  .logo-txt > a{
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 950px){
   .analytics-img > img, .cookie-img > img{
     height: 100%;
+  }
+}
+
+
+@media screen and (max-width: 930px) {
+  .logo_name{
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
   }
 }
 
@@ -437,6 +458,9 @@
 @media screen and (max-width: 800px){
   .container{
     height: 200vh;
+  }
+  .logo_name > p{
+    font-size: 1px;
   }
   #lights{
     width: 300px;
@@ -515,7 +539,7 @@
   }
   .container{
     width: 100%;
-    border: 3px solid orangered;
+    /* border: 3px solid orangered; */
     overflow-x: hidden;
   }
 }
@@ -530,7 +554,15 @@
   .first >h1{
     font-size: 60px;
   }
-  
+  .logo_name{
+    width: 300px;
+  }
+  .logo_name > p{
+    font-size: 1px;
+  }
+  .logo-txt{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 695px){
@@ -604,6 +636,13 @@
   } */
   .second{
     margin-bottom: 130px;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .second{
+    margin-right: 40px;
   }
 }
 
