@@ -151,9 +151,6 @@
   width: 60%;
   height: 100%;
 }
-.cookie-txt{
-  padding-left: 30px;
-}
 #learn > a{
   text-decoration: none;
   color: white;
@@ -521,6 +518,12 @@
     /* gap: 10%; */
     /* justify-content: center; */
   }
+  .nav-opt > a{
+    display: none;
+  }
+  .icon{
+    display: block;
+  }
 }
 
 @media screen and (max-width: 770px){
@@ -668,3 +671,5 @@
     font-size: 42px;
   }
 }
+
+
