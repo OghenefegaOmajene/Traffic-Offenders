@@ -687,4 +687,7 @@
   .first > h1{
     font-size: 35px;
   }
+  .first {
+    margin-bottom: 40px;
+  }
 }
