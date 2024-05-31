@@ -78,7 +78,7 @@
   text-decoration: none;
   color: white;
 }
-.icon{
+#menu{
   display: none;
 }
 
@@ -521,8 +521,12 @@
   .nav-opt > a{
     display: none;
   }
-  .icon{
+  #menu{
     display: block;
+    color: white;
+  }
+  .navbar{
+    padding-left: 60px;
   }
 }
 
@@ -673,3 +677,14 @@
 }
 
 
+@media screen and (max-width: 393px){
+  .logo > p{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 324px){
+  .first > h1{
+    font-size: 35px;
+  }
+}
